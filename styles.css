@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'IreneFlorentina';
+    src: url('fonts/IreneFlorentina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'IreneFlorentina';
+    transition: opacity 2s;
+    color: white;
+}
+
+.background {
+    background-image: url('fondo.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.centered {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.visible {
+    display: flex;
+    opacity: 1;
+}
+
+.titulo {
+    background-color: rgba(52, 43, 43, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    text-align: center;
+    background-color: rgba(63, 69, 68, 0.542);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.product p {
+    color: white;
+}
+
+.product-detail {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+.product-detail img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.detail-info {
+    margin-left: 20px;
+}
+
+.detail-info p {
+    color: white;
+}
+
+.precio-whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.precio-whatsapp p {
+    margin-right: 10px;
+}
+
+.precio-whatsapp img {
+    width: 30px;
+    height: 30px;
+}
